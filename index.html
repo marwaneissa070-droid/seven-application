@@ -2,28 +2,28 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
 <base target="_top">
 <title>SEVEN APPLICATION</title>
 <style>
 *{box-sizing:border-box}
-html,body{margin:0;padding:0;width:100%;min-height:100%;font-family:Arial,Helvetica,sans-serif;background:#fff;color:#111;-webkit-text-size-adjust:100%;overflow-x:hidden}
+html,body{margin:0;padding:0;width:100%;min-height:100%;max-width:100%;font-family:Arial,Helvetica,sans-serif;background:#fff;color:#111;-webkit-text-size-adjust:100%;overflow-x:hidden}
 .header{width:100%;background:#111;line-height:0}
 .header img{display:block;width:100%;height:auto}
 .container{width:100%;padding:11px 12px 22px}
 .section{margin:0 0 14px}
-.section-title{background:#ddd;font-weight:800;font-size:13px;padding:7px 9px;margin-bottom:7px}
+.section-title{background:#111;color:#fff;font-weight:800;font-size:13px;padding:8px 10px;margin-bottom:8px;border-radius:2px}
 .field{margin-bottom:7px}
 .field label{display:block;font-size:10.5px;font-weight:800;text-transform:uppercase;margin-bottom:3px}
 input[type=text],input[type=email],input[type=tel],input[type=number]{display:block;width:100%;height:38px;padding:6px 9px;border:1px solid #aaa;border-radius:3px;background:#fff;color:#111;font-size:16px;outline:none}
 input:focus{border-color:#333}
-.choices{height:36px;display:flex;align-items:center;gap:13px}
-.choice{display:flex;align-items:center;gap:5px;font-size:12.5px;font-weight:700;min-height:32px}
+.choices{height:36px;display:flex;align-items:center;gap:20px}
+.choice{display:flex;align-items:center;gap:9px;font-size:12.5px;font-weight:700;min-height:32px}
 input[type=radio]{appearance:none;-webkit-appearance:none;width:17px;height:17px;border:1px solid #777;border-radius:50%;margin:0;position:relative;flex:none}
 input[type=radio]:checked:after{content:"";position:absolute;width:8px;height:8px;border-radius:50%;background:#111;left:50%;top:50%;transform:translate(-50%,-50%)}
 .physical{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-bottom:7px}
 .small-field label{font-size:9.5px}
-.diabetic{grid-column:1/-1;display:flex;align-items:center;gap:9px;min-height:32px}
+.diabetic{grid-column:1/-1;display:flex;align-items:center;gap:13px;min-height:32px}
 .diabetic .choices{height:auto}
 .note{font-size:9px;color:#555;line-height:1.2;margin:-1px 0 6px}
 .submit-area{border-top:5px solid #111;margin-top:10px;padding-top:12px}
@@ -31,18 +31,7 @@ button{width:100%;height:45px;border:0;border-radius:3px;background:#111;color:#
 button:disabled{opacity:.65}
 #success{display:none;text-align:center;margin-top:10px;padding:9px;background:#eee;border:1px solid #ccc;font-size:12px;font-weight:700}
 iframe{display:none}
-@media(min-width:701px){
-body{background:#eee}
-.page{width:min(880px,calc(100% - 24px));margin:18px auto 35px;background:#fff;box-shadow:0 2px 12px #0002}
-.container{padding:22px 34px 28px}
-.field{display:grid;grid-template-columns:185px 1fr;gap:14px;align-items:center;margin-bottom:6px}
-.field label{margin:0;font-size:12px}
-.field input[type=text],.field input[type=email],.field input[type=tel],.field input[type=number]{height:36px;font-size:14px}
-.physical{grid-template-columns:1fr 1fr 1.2fr}
-.small-field{display:flex;align-items:center;gap:7px}
-.small-field label{white-space:nowrap}
-.diabetic{grid-column:auto}
-}
+
 </style>
 </head>
 <body>
